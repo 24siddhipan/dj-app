@@ -1,16 +1,17 @@
 import React, { Component } from 'react';
 import './App.css';
+import Spotify from './auth/auth';
+
 import LandingPage from './components/LandingPage/LandingPage'
 
-// TODO: set loginLink
-const loginLink = 'null';
-
+let accessToken;
 
 class App extends Component {
+
   render() {
     return (
       <div className="App">
-        <LandingPage />
+          <LandingPage />
       </div>
     );
   }

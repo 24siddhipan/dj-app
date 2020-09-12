@@ -1,13 +1,21 @@
 import React from 'react';
+import classes from './SpotifyLogin.css'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faSpotify } from '@fortawesome/free-brands-svg-icons'
+
 
 const spotifyLogin = ( props ) => {
     return (
-    <div>
-        <div></div>
-        <a href="http://localhost:8888">
-          <button variant="Contained" color="primary">Login with Spotify</button>
-        </a>
-    </div>
+      <div className={classes.Login}>
+          <h1 className={classes.Title}>DJ Room</h1>
+          <p>Kick back and listen to some great music with your friends!</p>
+            <a>
+              <button className={classes.loginButton} onClick={props.click}>
+                <FontAwesomeIcon className={classes.Icon} icon={faSpotify} />
+                Login with Spotify
+              </button>
+            </a>
+      </div>
     )
 }
 
