@@ -1,6 +1,6 @@
 const clientId = '34875103619d41789cffe8d8b7164824';
 const auth_endpoint = 'https://api.spotify.com/v1';
-const redirectUri = 'http://localhost:3000/';
+const redirectUri = 'http://localhost:3000/callback';
 let accessToken;
 
 const Spotify = {
