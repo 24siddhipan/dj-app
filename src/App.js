@@ -17,6 +17,11 @@ class App extends Component {
   componentDidMount() {
     if (localStorage['accessToken'] !== 'undefined') {
       this.setState({isAuthenticated: true})
+      localStorage['isAuthenticated'] = true
+    }
+    else {
+      this.setState({isAuthenticated: false})
+      localStorage['isAuthenticated'] = false;  
     }
   }
 
@@ -36,9 +41,8 @@ class App extends Component {
     return(
       <Switch>
         <Route exact path="/">
-          {this.state.isAuthenticated ? <Redirect to="/join-or-create" /> : () => <LandingPage clicked={this.accessSpotify}/>}
+          {!this.state.isAuthenticated ? <Redirect to='join-or-create' /> : () => <LandingPage clicked={this.accessSpotify} />}
         </Route>
-        <Route exact path="/join-or-create" component={StartCreation} />
       </Switch>
     )
   }
