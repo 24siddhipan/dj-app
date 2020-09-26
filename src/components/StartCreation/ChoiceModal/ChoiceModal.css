@@ -1,0 +1,60 @@
+.Modal {
+    display: flex;
+    flex-direction: column;
+    -webkit-box-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    justify-content: center;
+    min-height: 100vh;
+    max-width: 550px;
+    margin: 0px auto;
+    text-align: center;
+    
+}
+
+.Parent {
+    display: flex;
+    flex-direction: column;
+    background: rgb(255, 255, 255);
+    padding: 4rem;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 8px 10px 5px;
+}
+
+.Content {
+    display: flex;
+    flex-direction: column;
+    -webkit-box-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    justify-content: center;
+}
+
+.Radio {
+    border-radius: 0.25rem;
+    font-weight: 600;
+    width: 100%;
+    display: flex;
+    appearance: none;
+    align-items: flex-start;
+    -webkit-box-pack: center;
+    justify-content: center;
+    transition: all 250ms ease 0s;
+    user-select: none;
+    position: relative;
+    white-space: nowrap;
+    vertical-align: middle;
+    line-height: 1.2;
+    outline: none;
+    height: 70px;
+    min-width: 2.5rem;
+    font-size: 1rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    background-color: rgb(56, 161, 105);
+    color: rgb(255, 255, 255);
+    flex-direction: column;
+    text-align: left;
+    margin-right: 12px;
+    margin-bottom: 1.25rem;
+    cursor: pointer;
+}

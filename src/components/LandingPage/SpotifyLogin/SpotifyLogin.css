@@ -1,0 +1,47 @@
+.Login {
+    padding: 30px;
+    margin-bottom: 16px;
+    font-size: 21px;
+    font-weight: 200;
+    line-height: 2.1428571435;
+    text-align: center;
+}
+
+.Login p {
+    margin-bottom: 20px;
+    font-size: 16px;
+    font-weight: 200;
+    line-height: 1.4;
+}
+
+.Icon {
+    margin-right: 10px;
+}
+
+.Title {
+    line-height: 1;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.loginButton {
+    color: #fff;
+    background-color: #3a833a;
+    font-size: 21px;
+    padding: 14px 24px;
+    line-height: 1.33;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+
+@media (min-width: 768px) {
+    .Title {
+        font-size: 63px;
+    }
+
+    .Login p {
+        font-size: 21px;
+    }
+}
